@@ -1,6 +1,6 @@
 ---
 - name: Deploy Web App
-  hosts: n1
+  hosts: n2
   become: yes
 
   tasks:
@@ -11,6 +11,6 @@
 
   - name: Host Code
     git: 
-      repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
+      repo: https://github.com/CeeyIT-Solutions/food3.git
       dest: /var/www/html
 ...
