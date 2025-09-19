@@ -1,9 +1,9 @@
 ---
-name: Install Apache
-hosts: n2
-become: yes
+- name: Install Apache
+  hosts: n2
+  become: yes
 
-tasks:
+  tasks:
   - name: Install Apache
     apt: 
       name: apache2
