@@ -8,19 +8,19 @@
     yum: 
       name: httpd 
       state: present
-    when: ansible_distribution == "Amazon" or ansible_distribution == "centos"  
+    when: ansible_distribution == "Amazon" or ansible_distribution == "Centos"  
 
   - name: start httpd
     service: 
       name: httpd 
       state: started
-    when: ansible_distribution == "Amazon" or ansible_distribution == "centos"  
+    when: ansible_distribution == "Amazon" or ansible_distribution == "Centos"  
 
   - name: Enable httpd
     service: 
       name: httpd 
       enabled: yes   
-    when: ansible_distribution == "Amazon" or ansible_distribution == "centos"
+    when: ansible_distribution == "Amazon" or ansible_distribution == "Centos"
 
   - name: Install Apache2
     apt: 
@@ -28,13 +28,13 @@
       state: present
     when: ansible_distribution == "Ubuntu" or ansible_distribution == "Debian"
   
-  - name: start apache
+  - name: start apache2
     service: 
       name: apache2
       state: started
     when: ansible_distribution == "Ubuntu" or ansible_distribution == "Debian"
   
-  - name: Enable apache
+  - name: Enable apache2
     service: 
       name: apache2 
       enabled: yes  
