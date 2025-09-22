@@ -68,4 +68,4 @@ Each role contains:
 ```bash
 git clone <repo-url>
 cd ansible-work-6
-ansible-playbook -i hosts.ini 03-httpd.yml
+ansible-playbook -i hosts.ini 02-multi-play.yml
