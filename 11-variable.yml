@@ -1,0 +1,13 @@
+---
+- name: variable demo
+  hosts: g1
+  become: yes
+  vars: 
+  myusername: Tomi
+
+  tasks:
+  - name: update dynamic page
+    template: 
+      src: Mdynamic.j2
+      dest: /var/www/html/dynamic.html
+...
