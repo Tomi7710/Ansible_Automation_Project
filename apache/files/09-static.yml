@@ -5,7 +5,7 @@
 
   tasks:
   - name: update static page
-    template: 
-      src: Mdynamic.j2
-      dest: /var/www/html/dynamic.html
+    copy: 
+      src: static.html
+      dest: /var/www/html/static.html
 ...
