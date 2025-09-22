@@ -4,6 +4,18 @@ This repository contains a collection of Ansible playbooks and roles to automate
 
 It includes roles for Apache, PHP, HTML, Angular and supporting playbooks to demonstrate single plays, multi-plays, dynamic/static configuration and app deployments.
 
+## Highlights
+
+Frontend: HTML + Angular, deployed via automation.
+
+Backend: PHP, standardized and repeatable deployment.
+
+Web Server: Apache, managed consistently across servers.
+
+Assets: Static files and templates, allowing configuration as code.
+
+Deployment: Ansible playbooks and inventory provide fully automated, idempotent deployments suitable for CI/CD pipelines.
+
 ### Roles
 
 - Apache – Installs and configures Apache web server.
@@ -23,25 +35,25 @@ Each role contains:
 - files/ and templates/ → assets and configs
 
 ### Tech Stack
-- Web Server: Apache HTTP Server (apache role, 03-httpd.yml).
+- Web Server: Handles HTTP requests and serves web content.
+  - Apache HTTP Server (apache role, 03-httpd.yml).
 
-    Purpose: Handles HTTP requests and serves web content.
+- Application Server / Backend: Runs server-side code, handles business logic, processes requests.
+  - PHP (php role, 13-phpapp.yml)
 
-- Application Server / Backend: PHP (php role, 13-phpapp.yml)
+- Frontend / Client Layer: User interface that runs in the browser.
+  - HTML (html role, 12-htmlapp.yml)
+  - Angular (angular role, 14-angularapp.yml)
 
-    Purpose: Runs server-side code, handles business logic, processes requests.
+- Static Files / Assets: Templates, configuration files.
+  - files/ folder in roles
+  - templates/ folder for Jinja2 templates
+  - static.html, Maintenance.html
 
-- Frontend / Client Layer: HTML (html role, 12-htmlapp.yml); Angular (angular role, 14-angularapp.yml)
-
-    Purpose: User interface (HTML, CSS, JavaScript) that runs in the browser.
-
-- Static Files / Assets: files/ folder in roles; templates/ folder for Jinja2 templates; static.html, Maintenance.html
-
-    Purpose: Images, CSS, JS files, templates, configuration files.
-
-Configuration & Inventory: hosts.ini (static inventory); dynamic.j2 (template for dynamic inventory); Variables in tasks/main.yml or vars/main.yml
-
-Purpose: Define which servers to deploy to and how to configure them.
+- Configuration & Inventory: Define which servers to deploy to and how to configure them.
+  - hosts.ini (static inventory)
+  - dynamic.j2 (template for dynamic inventory)
+  - Variables in tasks/main.yml or vars/main.yml
 
 ### Notes
 
