@@ -29,4 +29,3 @@ Each role contains:
 - dynamic.j2 is a Jinja2 template to help generate inventory dynamically.
 
 - Maintenance.html and static.html are sample app pages deployed via playbooks.
-files/ and templates/ → assets and configs
