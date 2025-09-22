@@ -53,7 +53,7 @@ Each role contains:
 - Configuration & Inventory: Define which servers to deploy to and how to configure them.
   - hosts.ini (static inventory)
   - dynamic.j2 (template for dynamic inventory)
-  - Variables in tasks/main.yml or vars/main.yml
+  - Variables in vars/main.yml
 
 ### Notes
 
@@ -62,3 +62,10 @@ Each role contains:
 - dynamic.j2 is a Jinja2 template to help generate inventory dynamically.
 
 - Maintenance.html and static.html are sample app pages deployed via playbooks.
+
+### Getting Started
+
+```bash
+git clone <repo-url>
+cd ansible-work-6
+ansible-playbook -i hosts.ini 03-httpd.yml
