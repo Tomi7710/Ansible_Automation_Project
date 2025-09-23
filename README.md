@@ -12,9 +12,9 @@ Backend: PHP, standardized and repeatable deployment.
 
 Web Server: Apache, managed consistently across servers.
 
-Assets: Static files and templates, allowing configuration as code.
+Assets: Static files and templates, **allowing configuration as code**.
 
-Deployment: Ansible playbooks and inventory provide fully automated, idempotent deployments suitable for CI/CD pipelines.
+Deployment: **Ansible playbooks and inventory provide fully automated, idempotent deployments suitable for CI/CD pipelines**.
 
 ### Roles
 
