@@ -6,11 +6,11 @@ It includes roles for Apache, PHP, HTML, Angular and supporting playbooks to dem
 
 ## Highlights
 
-Frontend: HTML + Angular, deployed via automation.
+Frontend: HTML + Angular, **deployed via automation**.
 
-Backend: PHP, standardized and repeatable deployment.
+Backend: PHP, **standardized and repeatable deployment**.
 
-Web Server: Apache, managed consistently across servers.
+Web Server: Apache, **managed consistently across servers**.
 
 Assets: Static files and templates, **allowing configuration as code**.
 
