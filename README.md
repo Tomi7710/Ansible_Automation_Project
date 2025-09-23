@@ -34,7 +34,7 @@ Each role contains:
 
 - files/ and templates/ → assets and configs
 
-### Tech Stack
+### Web Application Stack
 
 - Web Server: Handles HTTP requests and serves web content.
   - Apache HTTP Server (apache role, 03-httpd.yml).
