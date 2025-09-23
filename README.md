@@ -37,7 +37,7 @@ Each role contains:
 ### Web Application Stack
 
 - Web Server: Handles HTTP requests and serves web content.
-  - Apache HTTP Server (apache role, 03-httpd.yml).
+  - Apache HTTP Server (apache role, 03-httpd.yml)
 
 - Application Server / Backend: Runs server-side code, handles business logic, processes requests.
   - PHP (php role, 13-phpapp.yml)
