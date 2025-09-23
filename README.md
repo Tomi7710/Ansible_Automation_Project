@@ -20,9 +20,9 @@ Deployment: **Ansible playbooks and inventory provide fully automated, idempoten
 
 - Apache – Installs and configures Apache web server.
 
-- PHP – Installs PHP and dependencies.
+- PHP – Installs PHP runtime and dependencies, configures the environment and deploys the PHP application.
 
-- HTML – Deploys static HTML content.
+- HTML – Deploys static HTML files to the web server.
 
 - Angular – Deploys Angular application.
 
@@ -35,6 +35,7 @@ Each role contains:
 - files/ and templates/ → assets and configs
 
 ### Tech Stack
+
 - Web Server: Handles HTTP requests and serves web content.
   - Apache HTTP Server (apache role, 03-httpd.yml).
 
