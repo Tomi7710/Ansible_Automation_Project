@@ -1,4 +1,4 @@
-## Ansible Project – Web Application Automation
+## Automated Deployment with Ansible
 
 This repository contains a collection of Ansible playbooks and roles to automate the setup of different components of a web application stack.
 
